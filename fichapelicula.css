@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+.nav-bar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	width: 100%;
+  	height: 55px;
+	line-height: 20px;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar > .navbar-list {
+ 	position: absolute;
+	list-style-type: none;
+ 	margin: 0;
+ 	z-index: 999;
+  	top: 0;
+  	right: 0;
+}
+
+.navbar-list .navbar-item {
+	color: black;
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	padding: 10px 10px;
+	margin: 0 0.5rem;
+}
+
+.navbar-item a {
+	color: black;
+	text-decoration: none;
+  	line-height: 35px
+ 	 margin:auto;
+}
+
+.logo {
+	top: 0;
+ 	left: 10px;
+	line-height: 35px;
+	width: 52px;
+	height: 50px;
+}
+
+
+body {
+	max-width: 100%;
+	margin:auto;
+}
+
+h1 {
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	padding: 20px 30px 10px 30px;
+}
+
+h2 {
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	padding: 20px 30px 10px 30px;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	padding: 20px 30px 10px 30px;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	padding: 10px 30px 10px 30px;
+}
+
+
+a {
+	color: white;
+}
+
+
+img {
+	padding-left: 20px;
+ 	width: 300px;
+ 	height: 200px;
+ }
+
+footer {
+	position: relative;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-column-gap: 30px;
+  grid-template-areas: 
+    "peli1 peli1 peli1 peli1"
+    "peli2 peli2 peli2 peli2"
+    "peli3 peli3 peli3 peli3";
+  margin-bottom: 100px;
+}
+
+.item {
+ 	flex-grow: 0;
+ 	flex-shrink: 0;
+ }
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; 
+	padding-top: 10px;
+	height: 0;
+	overflow: hidden;
+}
+ 
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 20;
+	right: 60;
+	width: 90%;
+	height: 100%;
+}
+
+/*Movil*/
+@media only screen and (max-width: 400px) {
+
+ footer {
+ 	display: none;
+ }
+
+ .nav-bar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	width: 100%;
+  	height: 30px;
+	line-height: 10px;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar > .navbar-list {
+ 	position: absolute;
+	list-style-type: none;
+ 	margin: 0;
+ 	z-index: 999;
+  	top: 0;
+  	right: 0;
+}
+
+.navbar-list .navbar-item {
+	color: black;
+	display: inline-block;
+	font-size: 10px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	padding: 5px 5px;
+	margin: 0 0.5rem;
+}
+
+.navbar-item a {
+	color: black;
+	text-decoration: none;
+  	line-height: 15px
+ 	margin:auto;
+ 	padding-left: 20px;
+}
+
+.logo {
+	top: 0;
+ 	left: 10px;
+	line-height: 15px;
+	width: 52px;
+	height: 50px;
+}
+
+
+ }
+

@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+	margin :0;
+	padding: 0;
+}
+
+.nav-bar {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+	width: 100%;
+  height: 55px;
+	line-height: 20px;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar > .navbar-list {
+  position: absolute;
+	list-style-type: none;
+  margin: 0;
+  z-index: 999;
+  top: 0;
+  right: 0;
+}
+
+.navbar-list .navbar-item {
+	color: black;
+	display: inline-block;
+	font-size: 14px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	padding: 5px 5px;
+	margin: 0 1rem;
+}
+
+.navbar-item a {
+	color: black;
+	text-decoration: none;
+  line-height: 35px
+  margin:auto;
+}
+
+.logo {
+	top: 0;
+  left: 10px;
+	line-height: 35px;
+	width: 52px;
+	height: 50px;
+}
+
+
+/*#user {
+	color: black;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: right;
+	display: inline;
+}*/
+
+/*img {
+	width: 350px;
+	height: 300px;
+}*/
+
+footer {
+	padding-top: 20px;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: black;
+	text-align: center;
+}
+
+.container {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: stretch;
+       align-content: space-between;
+       background-color: black;
+    }
+
+ .item {
+ 	text-align: center;
+ 	flex-grow: 0;
+ 	flex-shrink: 1;
+ }
+
+a {
+	color: white;
+}
+
+ * {
+  margin:0;
+  padding:0;
+  color:#fff;
+  font-family:'Montserrat', sans-serif;
+}
+
+/* aqui en versión movil*/
+
+@media only screen and (max-width: 400px) {
+  div#peli1 {
+  width: 100px;
+  height: 50px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/117/1544/1024");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli1:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 12px;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+  color: white;
+  font-weight:bold;
+}
+
+div#peli1:hover p#titulo {
+  margin-left: 50px;
+}
+
+p#descripcion {
+  font-size: 10px;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli1:hover p#descripcion {
+  margin-top: 50px;
+} 
+
+}
+
+
+
+/* aqui va la peli 1*/
+
+div#peli1 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/117/1544/1024");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli1:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+  color: white;
+  font-weight:bold;
+}
+
+div#peli1:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli1:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*aqui va la peli 2*/
+
+div#peli2 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/1047/3264/2448");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli2:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+}
+
+div#peli2:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli2:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*aqui va la peli 3*/
+div#peli3 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/103/2592/1936");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli3:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+}
+
+div#peli3:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli3:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*Peli4*/
+div#peli4 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/1025/4951/3301");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli4:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+}
+
+div#peli4:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli4:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*peli 5*/
+div#peli5 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/1005/5760/3840");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli5:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+}
+
+div#peli5:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli5:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*Peli 6*/
+
+div#peli6 {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("https://picsum.photos/id/1004/5616/3744");
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity 0.3s;
+}
+
+div#peli6:hover div#info {
+  opacity:1;
+}
+
+p#titulo {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: -75px;
+  margin-top: 15px;
+  transition: margin-left 0.3s;
+}
+
+div#peli6:hover p#titulo {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: margin-top 0.4s;
+}
+
+div#peli6:hover p#descripcion {
+  margin-top: 200px;
+} 
+
+/*Movil*/
+@media only screen and (max-width: 400px) {
+
+ .nav-bar {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  line-height: 10px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar > .navbar-list {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  z-index: 999;
+    top: 0;
+    right: 0;
+}
+
+.navbar-list .navbar-item {
+  color: black;
+  display: inline-block;
+  font-size: 10px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 5px 5px;
+  margin: 0 0.2rem;
+}
+
+.navbar-item a {
+  color: black;
+  text-decoration: none;
+  line-height: 15px
+  margin:auto;
+  padding-left: 40px;
+}
+
+.logo {
+  top: 0;
+  left: 10px;
+  line-height: 15px;
+  width: 52px;
+  height: 50px;
+}
+
+
+ }
